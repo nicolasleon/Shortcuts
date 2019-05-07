@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database defaultIdMethod="native" name="thelia"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="../../../vendor/propel/propel/resources/xsd/database.xsd" >
+
+    <!-- See propel documentation on http://propelorm.org for all information about schema file -->
+
+    <table name="shortcuts" namespace="Shortcuts\Model">
+        <column autoIncrement="true" name="id" primaryKey="true" required="true" type="INTEGER" />
+        <column name="title" size="255" type="VARCHAR" required="true"/>
+        <column defaultValue="0" name="position" required="true" type="INTEGER" />
+        <column name="url" required="true" type="VARCHAR" />
+        <column name="admin_id" required="false" type="INTEGER" />
+        <behavior name="i18n">
+            <parameter name="i18n_columns" value="title"/>
+        </behavior>
+        <foreign-key foreignTable="admin" name="fk_admin_id" onDelete="CASCADE" onUpdate="RESTRICT">
+            <reference foreign="id" local="admin_id" />
+        </foreign-key>
+        <!-- <behavior name="timestampable" /> -->
+    </table>
+
+    <external-schema filename="local/config/schema.xml" referenceOnly="true" />
+</database>

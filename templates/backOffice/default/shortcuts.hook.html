@@ -1,0 +1,26 @@
+{default_translation_domain domain='shortcuts.bo.default'}
+
+<li class="dropdown">
+    <button class="dropdown-toggle" data-toggle="dropdown">
+        {intl l="Shortcuts"}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        {ifloop rel="user-shortcuts"}
+            {loop type="shortcuts" name="user-shortcuts" user_id={admin attr="id"}}
+            <li>
+                <a href="{$URL}" title="{$TITLE}">
+                    {$TITLE}
+                </a>
+            </li>
+            {/loop}
+        {/ifloop}
+        {elseloop rel="user-shortcuts"}
+            <li>
+                <a href="#" title="{intl l="No shortcuts found"}">
+                    {intl l="No shortcuts found"}
+                </a>
+            </li>
+        {/elseloop}
+    </ul>
+</li>

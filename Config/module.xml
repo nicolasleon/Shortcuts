@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://thelia.net/schema/dic/module"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/module http://thelia.net/schema/dic/module/module-2_2.xsd">
+    <fullnamespace>Shortcuts\Shortcuts</fullnamespace>
+    <descriptive locale="en_US">
+        <title>Shortcuts</title>
+        <description>Fast access to the backoffice pages you use the most</description>
+    </descriptive>
+    <descriptive locale="fr_FR">
+        <title>Raccourcis</title>
+        <description>Accédez rapidement aux pages du backoffice que vous utilisez le plus</description>
+    </descriptive>
+    <!-- <logo></logo> -->
+    <!--<images-folder>images</images-folder>-->
+    <languages>
+        <language>en_US</language>
+        <language>fr_FR</language>
+    </languages>
+    <version>0.2.0</version>
+    <author>
+        <name>Nicolas Léon</name>
+        <email>nicolas@omnitic.com</email>
+    </author>
+    <type>classic</type>
+    <thelia>2.0.0</thelia>
+    <stability>alpha</stability>
+</module>

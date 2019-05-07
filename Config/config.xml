@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config xmlns="http://thelia.net/schema/dic/config"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
+
+    <loops>
+        <loop name="shortcuts" class="Shortcuts\Loop\ShortcutsLoop" />
+    </loops>
+
+    <forms>
+        <form name="thelia.admin.shortcut.creation" class="Shortcuts\Form\ShortcutForm" />
+    </forms>
+
+    <hooks>
+        <hook id="shortcuts.hook" class="Shortcuts\Hook\Shortcuts" scope="request">
+            <tag name="hook.event_listener" event="main.topbar-top" active="1" type="back" method="onMainTopbarTop" />
+        </hook>
+    </hooks>
+
+</config>
