@@ -1,6 +1,6 @@
 # Shortcuts (EN)
 
-This module allows users to add shortcuts to backoffice's pages in order to quickly navigate in the backoffice.
+This module allows users to add shortcuts to Thelia's backoffice. You can then quickly go to any backoffice pages.
 
 ## Installation
 
@@ -78,7 +78,6 @@ The module use the main.topbar-top hook to display the shortcuts in the backoffi
 
 # Shortcuts (FR)
 
-This module allows users to add shortcuts to backoffice's pages in order to quickly navigate in the backoffice.
 Ce module permet aux utilisateurs du backoffice d'ajouter des raccourcis vers des pages spécifiques afin d'accélérer la navigation au sein du backoffice.
 
 ## Installation manuelle
@@ -95,7 +94,7 @@ Un lien vers la page de configuration des raccourcis est automatiquement ajouté
 
 ## Utilisation
 
-Le module ajoute un menu "Raccourcis" dans le menu de navigation supérier de thelia. Un click sur ce menu affiche la liste des raccourcis existants dans un menu déroulant
+Le module ajoute un menu "Raccourcis" dans le menu de navigation supérier de thelia. Un clic sur ce menu affiche la liste des raccourcis existants dans un menu déroulant
 
 Pour ajouter un raccourci:
 
